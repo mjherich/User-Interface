@@ -64,3 +64,85 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+
+/* Set width of body */
+body {
+	max-width: 876px; /* Width of image divider in middle of page */
+	margin: auto;
+}
+
+/* Header styles */
+header nav, header .logo {
+	display: inline-block;
+}
+header .logo {
+	float: right;
+}
+header nav {
+	margin: 30px;
+}
+header .logo {
+	margin: 20px;
+}
+header nav a {
+	margin: 15px;
+	color: gray;
+	text-decoration: none;
+}
+
+/* CTA styles */
+.cta {
+	margin: 50px 0;
+}
+.cta-left, .cta-right {
+	display: inline-block;
+	width: 49%;
+	vertical-align: middle;
+	text-align: center;
+}
+.cta h1 {
+	font-size: 60px;
+}
+.cta-btn {
+	padding: 5px 30px;
+	background: #fff;
+	border: 2px solid #000;
+}
+
+/* Split up section content boxes */
+section, section .content-box {
+	display: inline-block;
+	float: left;
+}
+section:first-child .content-box {
+	width: 50%;
+}
+section:last-child .content-box {
+	width: 33%;
+}
+
+/* Space out middle image */
+.middle-img {
+	margin: 50px auto;
+}
+
+/* Add border above and below main content area */
+main {
+	display: inline-block;
+	padding: 50px 0;
+	border-top: 1px solid gray;
+	border-bottom: 1px solid gray;
+}
+
+/* Add margin above footer */
+footer {
+	margin-top: 50px;
+}
+/* Add spacing between footer text */
+footer p {
+	margin: 10px 0;
+}
+footer .copyright {
+	text-align: center;
+	margin: 50px 0;
+}
