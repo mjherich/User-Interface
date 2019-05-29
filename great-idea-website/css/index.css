@@ -198,6 +198,33 @@ a.learn-more-btn {
 	margin: 15px auto;
 }
 
+/* === SERVICES PAGE - STRETCH GOAL */
+@media only screen and (max-width: 856px) {
+	header > a {
+		order: -9001;
+		width: 100%;
+		text-align: center;
+	}
+	header {
+		flex-wrap: wrap;
+		height: auto;
+	}
+	header nav {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	img.services-header-img {
+		width: 100%;
+	}
+	.services-page section {
+		justify-content: center;
+	}
+	/* Add margin to side of main content area */
+	main.services-page {
+		margin: 0 15px;
+	}
+}
+
 /* === VISION PAGE - STRETCH GOAL === */
 main.vision-page {
 	margin-top: 25px;
