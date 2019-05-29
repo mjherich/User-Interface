@@ -72,32 +72,30 @@ body {
 }
 
 /* Header styles */
-header nav, header .logo {
-	display: inline-block;
-}
-header .logo {
-	float: right;
-}
-header nav {
-	margin: 30px;
-}
-header .logo {
-	margin: 20px;
-}
 header nav a {
 	margin: 15px;
 	color: gray;
 	text-decoration: none;
 }
+header {
+	height: 100px;
+}
+header, header nav {
+	display: flex;
+	align-items: center;
+}
+header nav {
+	flex-grow: 2;
+}
 
 /* CTA styles */
 .cta {
-	margin: 50px 0;
+	display: flex;
+	align-items: center;
+	margin: 50px 0 75px 0;
 }
 .cta-left, .cta-right {
-	display: inline-block;
-	width: 49%;
-	vertical-align: middle;
+	width: 50%;
 	text-align: center;
 }
 .cta h1 {
@@ -110,9 +108,8 @@ header nav a {
 }
 
 /* Split up section content boxes */
-section, section .content-box {
-	display: inline-block;
-	float: left;
+section {
+	display: flex;
 }
 section:first-child .content-box {
 	width: 50%;
@@ -128,7 +125,6 @@ section:last-child .content-box {
 
 /* Add border above and below main content area */
 main {
-	display: inline-block;
 	padding: 50px 0;
 	border-top: 1px solid gray;
 	border-bottom: 1px solid gray;
